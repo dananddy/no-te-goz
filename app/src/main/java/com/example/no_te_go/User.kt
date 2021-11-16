@@ -1,13 +1,20 @@
 package com.example.no_te_go
 
-class User(
-    private val login: String,
-    private val password: String) {
+import java.lang.Exception
+import javax.crypto.SecretKey
 
-    fun getUserLogin() : String {
+object User {
+
+    init {
+    }
+    var login = ""
+
+    fun getLoginName() :String {
         return login
     }
-    fun getUserPassword() : String {
-        return password
+
+    fun setLoginName(login: String) {
+        this.login = login
     }
+
 }
