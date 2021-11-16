@@ -34,9 +34,10 @@ class EditPassword : Fragment() {
                print("")
             } else {
                 val editor = preference?.edit()
-                val encriter = AESEncrypt()
-                val PASS = encriter.encrypt(newPassword)
-                editor?.putString(login, PASS.toString(Charsets.UTF_8))
+//                val encriter = AESEncrypt()
+//                val PASS = encriter.encrypt(newPassword)
+                //PASS.toString(Charsets.UTF_8)
+                editor?.putString(login, newPassword)
                 editor?.apply()
                 val manager = requireActivity().supportFragmentManager
                 manager.beginTransaction().remove(this).commit()
