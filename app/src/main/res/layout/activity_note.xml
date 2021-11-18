@@ -8,12 +8,12 @@
 
 
     <Button
-        android:id="@+id/button_add_note"
+        android:id="@+id/button_save"
         android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_marginBottom="48dp"
         android:backgroundTint="?colorAccent"
-        android:text="Add Note"
+        android:text="Save"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight="150"
@@ -54,7 +54,7 @@
         android:backgroundTint="?colorAccent"
         android:hint="Edit Note"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button_add_note"
+        app:layout_constraintBottom_toTopOf="@+id/button_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintLeft_toLeftOf="parent"
