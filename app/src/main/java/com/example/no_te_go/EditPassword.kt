@@ -39,7 +39,7 @@ class EditPassword : Fragment() {
         preferencevector = this.activity?.getSharedPreferences("VECTOR", Context.MODE_PRIVATE)
 
         if (User.newUser) {
-            oldPassword.setText("ENTER YOUR NEW PASSWORD BELOW")
+            oldPassword.setText("ENTER YOUR NEW PASSWORD")
             oldPassword.isEnabled = false
             newUser = true
         }

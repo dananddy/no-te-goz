@@ -35,7 +35,7 @@ class AESEncrypt {
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun getVector(): String {
-        return Base64.getEncoder().encodeToString(myInitializationVector)
+        return Base64.getEncoder().withoutPadding().encodeToString(myInitializationVector)
     }
 
 }
